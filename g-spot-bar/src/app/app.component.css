@@ -1,3 +1,4 @@
-.container {
+.container,
+.container-fluid {
   padding-top: 65px;
 }
