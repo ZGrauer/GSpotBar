@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-drink-list></app-drink-list>
+  </div>
+  <div class="col-md-7">
+    <span *ngIf="!clickedDrink">Please click a drink</span>
+    <app-drink-detail *ngIf="clickedDrink" [drink]="clickedDrink"></app-drink-detail>
+
+  </div>
+</div>
