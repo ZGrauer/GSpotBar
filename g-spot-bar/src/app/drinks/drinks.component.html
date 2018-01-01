@@ -3,8 +3,7 @@
     <app-drink-list></app-drink-list>
   </div>
   <div class="col-md-7">
-    <span *ngIf="!clickedDrink">Please click a drink</span>
     <app-drink-detail *ngIf="clickedDrink" [drink]="clickedDrink"></app-drink-detail>
-
+    <span *ngIf="!clickedDrink">Please select a drink to view details.</span>
   </div>
 </div>

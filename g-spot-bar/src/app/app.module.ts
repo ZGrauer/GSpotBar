@@ -7,9 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { DrinkListComponent } from './drinks/drink-list/drink-list.component';
+import { DrinkItemComponent } from './drinks/drink-item/drink-item.component';
 import { DrinkDetailComponent } from './drinks/drink-detail/drink-detail.component';
-
-import { DrinkService } from './drinks/drink.service';
 
 @NgModule({
   declarations: [
@@ -17,6 +16,7 @@ import { DrinkService } from './drinks/drink.service';
     HeaderComponent,
     DrinksComponent,
     DrinkListComponent,
+    DrinkItemComponent,
     DrinkDetailComponent
   ],
   imports: [
@@ -24,7 +24,7 @@ import { DrinkService } from './drinks/drink.service';
     FormsModule,
     HttpModule
   ],
-  providers: [DrinkService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

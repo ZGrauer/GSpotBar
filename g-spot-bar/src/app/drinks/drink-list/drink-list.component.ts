@@ -14,11 +14,7 @@ export class DrinkListComponent implements OnInit {
 
   ngOnInit() {
       this.drinks = this.drinkService.getDrinks();
-      this.drinkService.drinkClicked.emit(this.drinks[0]);
   }
 
-  onClicked(drink: Drink) {
-      this.drinkService.drinkClicked.emit(drink);
-      console.log("Drink list item emitting " + drink.name);
-  }
+  
 }

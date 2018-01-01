@@ -1,16 +1,5 @@
 <div class="row">
     <div class="col-xs-12">
-        <a href="#" class="list-group-item clearfix" *ngFor="let drink of drinks" (click)="onClicked(drink)">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">{{drink.name}}</h4>
-                <p class="list-group-item-text">
-                    {{drink.description}}
-                </p>
-            </div>
-            <span class="pull-right">
-                <img [src]="drink.imagePath" alt="{{drink.name}}" class="img-responsive" style="max-height: 75px;"/>
-            </span>
-        </a>
-        <app-drink-detail></app-drink-detail>
+        <app-drink-item *ngFor="let drinkElem of drinks" [drink] = "drinkElem"></app-drink-item>
     </div>
 </div>
