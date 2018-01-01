@@ -11,6 +11,7 @@ import { DrinkItemComponent } from './drinks/drink-item/drink-item.component';
 import { DrinkDetailComponent } from './drinks/drink-detail/drink-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import { EntertainmentComponent } from './entertainment/entertainment.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EntertainmentComponent } from './entertainment/entertainment.component'
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
