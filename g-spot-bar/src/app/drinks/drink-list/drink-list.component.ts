@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Drink } from '../drink.model';
 import { DrinkService } from '../drink.service';
 
+
+
 @Component({
   selector: 'app-drink-list',
   templateUrl: './drink-list.component.html',
@@ -16,5 +18,5 @@ export class DrinkListComponent implements OnInit {
       this.drinks = this.drinkService.getDrinks();
   }
 
-  
+
 }
