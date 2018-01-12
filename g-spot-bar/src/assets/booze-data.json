@@ -1,0 +1,19 @@
+{"drinks": [
+    {
+        "name":"Wild Turkey 101",
+        "brewery": "Wild Turkey",
+        "type": "Bourbon",
+        "description":"For more than 60 years, legendary Master Distiller Jimmy Russell has been crafting Wild Turkey 101 the right way. With a high rye content, this iconic bourbon is perfectly aged in American White Oak barrels with the deepest char for more character.",
+        "imagePath": "https://cdn.liquor.com/wp-content/uploads/2015/09/25182732/wild-turkey-101-720x720-brand-page-v2-1.jpg",
+        "abv": 50.5
+    },
+    {
+        "name":"Firecracker",
+        "brewery": "Doc Collier",
+        "type": "Moonshine",
+        "description":"Our version of a Cinnamon Moonshine. It’ll light your fuse or burn your Bunsen!",
+        "imagePath": "https://doccollier.files.wordpress.com/2014/01/screen-shot-2015-03-11-at-3-03-44-pm.png",
+        "abv": 32.5
+    }
+]
+}

@@ -2,11 +2,7 @@
   <h2><i class="far fa-beer"></i> Drinks</h2>
 </div>
 <div class="row">
-  <div class="col-md-5">
+  <div class="col-md-12">
     <app-drink-list></app-drink-list>
-  </div>
-  <div class="col-md-7">
-    <app-drink-detail *ngIf="clickedDrink" [drink]="clickedDrink"></app-drink-detail>
-    <span *ngIf="!clickedDrink">Please select a drink to view details.</span>
   </div>
 </div>
