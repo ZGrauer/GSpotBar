@@ -13,7 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { EntertainmentComponent } from './entertainment/entertainment.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import {CarouselModule} from 'primeng/primeng';
+import {CarouselModule, DataTableModule, SharedModule} from 'primeng/primeng';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import {CarouselModule} from 'primeng/primeng';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    DataTableModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

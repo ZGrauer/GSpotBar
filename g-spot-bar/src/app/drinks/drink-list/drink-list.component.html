@@ -1,58 +1,57 @@
-<p-carousel headerText="Beers on Tap" [value]="beers">
+<p-carousel headerText="Beers on Tap" [value]="beers" numVisible="2">
     <ng-template let-drink pTemplate="item">
         <div class="ui-grid ui-grid-responsive">
+
             <div class="ui-grid-row">
-                <div class="ui-grid-col-12"><img src="{{drink.imagePath}}" height="100"></div>
+                <div class="ui-grid-col-12 text-center"><h3>{{drink.name}}</h3></div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Name</b></div>
-                <div class="ui-grid-col-8"><b>{{drink.name}}</b></div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Brewery</b></div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b>Brewery: </b></div>
                 <div class="ui-grid-col-8">{{drink.brewery}}</div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Type</b></div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b><i class="far fa-beer"></i> Type: </b></div>
                 <div class="ui-grid-col-8">{{drink.type}}</div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Alcohol by volume</b></div>
-                <div class="ui-grid-col-8">{{drink.abv}}</div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b>Alcohol: </b></div>
+                <div class="ui-grid-col-8">{{drink.abv}}%</div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Description</b></div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b>Description: </b></div>
                 <div class="ui-grid-col-8">{{drink.description}}</div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-12 text-center"><img class="pad-tb-10" src="{{drink.imagePath}}" height="100"></div>
             </div>
         </div>
     </ng-template>
 </p-carousel>
 <hr />
-<p-carousel headerText="Booze" [value]="booze">
+<p-carousel headerText="Booze" [value]="booze" numVisible="3">
     <ng-template let-drink pTemplate="item">
         <div class="ui-grid ui-grid-responsive">
             <div class="ui-grid-row">
-                <div class="ui-grid-col-12"><img src="{{drink.imagePath}}" height="100"></div>
+                <div class="ui-grid-col-12 text-center"><h3>{{drink.name}}</h3></div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Name</b></div>
-                <div class="ui-grid-col-8"><b>{{drink.name}}</b></div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Distillery</b></div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b>Distillery: </b></div>
                 <div class="ui-grid-col-8">{{drink.brewery}}</div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Type</b></div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b><i class="far fa-glass-martini"></i> Type: </b></div>
                 <div class="ui-grid-col-8">{{drink.type}}</div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Alcohol by volume</b></div>
-                <div class="ui-grid-col-8">{{drink.abv}}</div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b>Alcohol: </b></div>
+                <div class="ui-grid-col-8">{{drink.abv}}%</div>
             </div>
             <div class="ui-grid-row">
-                <div class="ui-grid-col-4"><b>Description</b></div>
+                <div class="ui-grid-col-4 text-right text-pad-right"><b>Description: </b></div>
                 <div class="ui-grid-col-8">{{drink.description}}</div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-12 text-center"><img class="pad-tb-10" src="{{drink.imagePath}}" height="100"></div>
             </div>
         </div>
     </ng-template>

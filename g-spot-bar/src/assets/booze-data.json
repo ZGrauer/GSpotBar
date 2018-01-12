@@ -22,6 +22,14 @@
         "description":"Root Beer, Vanilla, and Moonshine make up our flavor of the month and it is a MUST try when you stop in.  A sweet and smooth finish like no other root beer in town!",
         "imagePath": "https://doccollier.files.wordpress.com/2014/01/screen-shot-2015-03-11-at-3-03-44-pm.png",
         "abv": 20
+    },
+    {
+        "name":"Blue Flame",
+        "brewery": "Ole Smokey",
+        "type": "Moonshine",
+        "description":"We are done messing around, it’s time to raise the proof.  At 128 proof, it’s clear, clean and exactly what moonshine should be. Purity and perfection are the name of the game when it comes to Ole Smoky® Blue Flame Moonshine. Evidence of our high quality, high proof moonshine is all in the color of the flame – if it burns blue, it’s true.",
+        "imagePath": "https://s3.amazonaws.com/s3.olesmokymoonshine.com/cache/245x507-ADAPTIVE-100/2015/11/OSM_blue_flame5.png",
+        "abv": 20
     }
 ]
 }

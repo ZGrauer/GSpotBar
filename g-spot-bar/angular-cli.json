@@ -28,7 +28,12 @@
           "../node_modules/jquery/dist/jquery.min.js",
           "../node_modules/bootstrap/dist/js/bootstrap.min.js",
           "../node_modules/@fortawesome/fontawesome/index.js",
-          "../node_modules/@fortawesome/fontawesome-pro-regular/index.js"
+          "../node_modules/@fortawesome/fontawesome-pro-regular/index.js",
+          "../node_modules/@fortawesome/fontawesome-pro-solid/index.js",
+          "../node_modules/@fortawesome/fontawesome-pro-light/index.js",
+          "../node_modules/@fortawesome/fontawesome-free-solid/index.js",
+          "../node_modules/@fortawesome/fontawesome-free-regular/index.js",
+          "../node_modules/@fortawesome/fontawesome-free-brands/index.js"
       ],
       "environmentSource": "environments/environment.ts",
         "environments": {
