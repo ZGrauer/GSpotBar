@@ -9,3 +9,28 @@
     float: none;
   }
 }
+
+.brand-logo {
+  height: 80px;
+  width: auto;
+  margin-top: -15px;
+}
+
+.navbar-brand {
+  height: 80px;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.nav>li>a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+}
+
+.navbar-inverse {
+  background-color: #2e3032;
+}

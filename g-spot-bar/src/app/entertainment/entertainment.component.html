@@ -1,29 +1,42 @@
-<div class="ui-g-12">
-  <h2><i class="fa fa-gamepad"></i> SNES Games</h2>
-  <hr />
-</div>
-<div class="ui-g-12 ui-lg-8 ui-lg-offset-2">
-  <p>
-    The G Spot is equiped with a Super Nintendo (SNES) with over 200 classic games for patrons to play for free. Challenge friends to games of Mario Kart, Mortal Kombat, or Turtles In Time.
-  </p>
-</div>
-<div class="ui-g-12">
-  <h2><i class="fa fa-music"></i> Karaoke</h2>
-  <hr />
-</div>
-<div class="ui-g-12 ui-lg-8 ui-lg-offset-2">
-  <p>
-    With over 700 songs to choose from, you’re sure to find something to sing on karaoke night. And when is karaoke night? Everynight!
-  </p>
-  <p>
-    Karaoke is free to all G Spot patrons. Just indicate the song’s track number and the staff will queue it up. This is the current song listing:
-  </p>
-</div>
-<div class="ui-g-12 ui-lg-8 ui-lg-offset-2">
-  <h3>Karaoke Song List</h3>
-  <p-dataTable [value]="songs" [lazy]="true" [rows]="30" [paginator]="true" [rowsPerPageOptions]="[20,30,40,50]" [resizableColumns]="true" [totalRecords]="totalRecords" (onLazyLoad)="loadSongsLazy($event)">
-    <p-column field="artist" header="Artist" [style]="{'width':'45%'}"></p-column>
-    <p-column field="title" header="Title" [style]="{'width':'45%'}"></p-column>
-    <p-column field="track" header="Track #" [style]="{'width':'10%'}"></p-column>
-  </p-dataTable>
+<div class="ui-g">
+  <div class="ui-g-12 ui-lg-4 ui-lg-offset-2 content">
+      <h2>Cards Against Humanity</h2>
+      <hr />
+      <p>
+        Gather your friends for a fun night of <a href="https://cardsagainsthumanity.com/" target="_blank">Cards Against Humanity</a> at The G Spot.  The bar has nearly every expension pack filling the bigger blacker box.
+      </p>
+
+      <blockquote>
+          <p>
+              Cards Against Humanity is a party game for horrible people. Unlike most of the party games you've played before, Cards Against Humanity is as despicable and awkward as you and your friends.
+          </p>
+          <footer>From <cite title="Source Title">CardsAgainstHumanity.com/</cite></footer>
+      </blockquote>
+  </div>
+  <div class="ui-g-12 ui-lg-4 content">
+    <h2><i class="fa fa-gamepad"></i> SNES Games</h2>
+    <hr />
+    <p>
+      The G Spot is equiped with a Super Nintendo (SNES) with over 200 classic games for patrons to play for free. Challenge friends to games of Mario Kart, Mortal Kombat, or Turtles In Time.
+    </p>
+  </div>
+
+  <div class="ui-g-12 ui-lg-8 ui-lg-offset-2">
+      <h2><i class="fa fa-music"></i> Karaoke</h2>
+      <hr />
+    <p>
+      With over 700 songs to choose from, you’re sure to find something to sing on karaoke night. And when is karaoke night? Everynight!
+    </p>
+    <p>
+      Karaoke is free to all G Spot patrons. Just indicate the song’s track number and the staff will queue it up. This is the current song listing:
+    </p>
+  </div>
+  <div class="ui-g-12 ui-lg-8 ui-lg-offset-2">
+    <h3>Karaoke Song List</h3>
+    <p-dataTable [value]="songs" [lazy]="true" [rows]="30" [paginator]="true" [rowsPerPageOptions]="[20,30,40,50]" [resizableColumns]="true" [totalRecords]="totalRecords" (onLazyLoad)="loadSongsLazy($event)">
+      <p-column field="artist" header="Artist" [style]="{'width':'45%'}"></p-column>
+      <p-column field="title" header="Title" [style]="{'width':'45%'}"></p-column>
+      <p-column field="track" header="Track #" [style]="{'width':'10%'}"></p-column>
+    </p-dataTable>
+  </div>
 </div>
