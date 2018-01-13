@@ -11,7 +11,15 @@ import { ContactComponent } from './contact/contact.component';
 import { EntertainmentComponent } from './entertainment/entertainment.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import {CarouselModule, DataTableModule, SharedModule, ButtonModule} from 'primeng/primeng';
+import {
+  CarouselModule,
+  DataTableModule,
+  SharedModule,
+  ButtonModule,
+  InputTextModule,
+  GrowlModule,
+  CaptchaModule
+} from 'primeng/primeng';
 import { HomeComponent } from './home/home.component';
 
 
@@ -33,7 +41,10 @@ import { HomeComponent } from './home/home.component';
     CarouselModule,
     DataTableModule,
     SharedModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
+    GrowlModule,
+    CaptchaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

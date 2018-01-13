@@ -1,3 +1,25 @@
 <div class="page-header">
   <h1><i class="fa fa-phone"></i> Contact</h1>
 </div>
+<div class="ui-g-12 ui-lg-10 ui-lg-offset-2">
+  <form  (submit)="sendEmail(message)">
+    <span class="ui-float-label">
+
+      <input type="text" pInputText  id="name" name="name" [(ngModel)]="message.name">
+      <label for="name">Your Name</label>
+
+    </span>
+    <span class="ui-float-label">
+
+      <input type="text" pInputText  id="email" name="email" [(ngModel)]="message.email">
+       <label for="email">Your Email</label>
+    </span>
+    <span class="ui-float-label">
+      <textarea id="message" name="message" [rows]="6" [cols]="70" pInputTextarea autoResize="autoResize" [(ngModel)]="message.message"  pInputText></textarea>
+      <label for="message">Message</label>
+  </span>
+    <button pButton type="button" label="Send Email" icon="fa-envelope" (click)="sendEmail(message)" [disabled]="buttonEnabled" ></button>
+    <p-captcha siteKey="6LdjnEAUAAAAADdvKH71P4RxKSXk5bGo5-Npvr4O" (onResponse)="showResponse($event)"></p-captcha>
+  </form>
+  <p-growl [(value)]="msgs"></p-growl>
+</div>
