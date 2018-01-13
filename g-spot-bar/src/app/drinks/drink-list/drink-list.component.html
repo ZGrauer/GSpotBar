@@ -1,58 +1,87 @@
-<p-carousel headerText="Beers on Tap" [value]="beers" numVisible="2">
-    <ng-template let-drink pTemplate="item">
-        <div class="ui-grid ui-grid-responsive">
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-4">
+        <h3><i class="fa fa-beer"></i> Beers on Tap</h3>
+        <p>
+            The G Spot has two beers on tap that rotate seasonally. Check this site to see what's on tap now.  KC Bier Co.'s Dunkel is a bar favorite, and surprisinly easy to drink even if you don't like "dark beer".
+        </p>
+        <p>
+            Additional bottled or canned beer availability changes frequently.  Check with bar staff to see what's availible outside of the draft beers.
+        </p>
+    </div>
+    <div class="ui-g-12 ui-md-8">
+        <p-carousel headerText="" [value]="beers" numVisible="2">
+            <ng-template let-drink pTemplate="item">
+                <div class="ui-grid ui-grid-responsive">
 
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-12 text-center"><h3>{{drink.name}}</h3></div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b>Brewery: </b></div>
-                <div class="ui-grid-col-8">{{drink.brewery}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b><i class="far fa-beer"></i> Type: </b></div>
-                <div class="ui-grid-col-8">{{drink.type}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b>Alcohol: </b></div>
-                <div class="ui-grid-col-8">{{drink.abv}}%</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b>Description: </b></div>
-                <div class="ui-grid-col-8">{{drink.description}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-12 text-center"><img class="pad-tb-10" src="{{drink.imagePath}}" height="100"></div>
-            </div>
-        </div>
-    </ng-template>
-</p-carousel>
-<hr />
-<p-carousel headerText="Booze" [value]="booze" numVisible="3">
-    <ng-template let-drink pTemplate="item">
-        <div class="ui-grid ui-grid-responsive">
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-12 text-center"><h3>{{drink.name}}</h3></div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b>Distillery: </b></div>
-                <div class="ui-grid-col-8">{{drink.brewery}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b><i class="far fa-glass-martini"></i> Type: </b></div>
-                <div class="ui-grid-col-8">{{drink.type}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b>Alcohol: </b></div>
-                <div class="ui-grid-col-8">{{drink.abv}}%</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-4 text-right text-pad-right"><b>Description: </b></div>
-                <div class="ui-grid-col-8">{{drink.description}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-12 text-center"><img class="pad-tb-10" src="{{drink.imagePath}}" height="100"></div>
-            </div>
-        </div>
-    </ng-template>
-</p-carousel>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-12 text-center"><h3>{{drink.name}}</h3></div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b>Brewery: </b></div>
+                        <div class="ui-grid-col-8">{{drink.brewery}}</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b><i class="fa fa-beer"></i> Type: </b></div>
+                        <div class="ui-grid-col-8">{{drink.type}}</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b>Alcohol: </b></div>
+                        <div class="ui-grid-col-8">{{drink.abv}}%</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b>Description: </b></div>
+                        <div class="ui-grid-col-8">{{drink.description}}</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-12 text-center"><img class="pad-tb-10" src="{{drink.imagePath}}" height="100"></div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+        <hr />
+    </div>
+</div>
+
+
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-3">
+        <h3><i class="fa fa-glass"></i> Booze Behind the Bar</h3>
+        <p>
+            The G Spot also has a full list of alcohol for mixing or just shooting.
+        </p>
+        <p>
+            We got you covered for <i class="fa fa-music"></i> 1 bourbon, 1 scotch, and 1 beer <i class="fa fa-music"></i> plus lots more.
+        </p>
+    </div>
+    <div class="ui-g-12 ui-md-9">
+        <p-carousel headerText="" [value]="booze" numVisible="3">
+            <ng-template let-drink pTemplate="item">
+                <div class="ui-grid ui-grid-responsive">
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-12 text-center"><h3>{{drink.name}}</h3></div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b>Distillery: </b></div>
+                        <div class="ui-grid-col-8">{{drink.brewery}}</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b><i class="fa fa-glass"></i> Type: </b></div>
+                        <div class="ui-grid-col-8">{{drink.type}}</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b>Alcohol: </b></div>
+                        <div class="ui-grid-col-8">{{drink.abv}}%</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-4 text-right text-pad-right"><b>Description: </b></div>
+                        <div class="ui-grid-col-8">{{drink.description}}</div>
+                    </div>
+                    <div class="ui-grid-row">
+                        <div class="ui-grid-col-12 text-center"><img class="pad-tb-10" src="{{drink.imagePath}}" height="100"></div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>

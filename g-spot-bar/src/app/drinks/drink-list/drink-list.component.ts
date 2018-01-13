@@ -10,15 +10,23 @@ import { DrinkService } from '../drink.service';
   styleUrls: ['./drink-list.component.css']
 })
 export class DrinkListComponent implements OnInit {
-    beers: Drink[];
-    booze: Drink[];
+    // Initialize Beer to 2 to match eventual JSON.
+    // Set booze to multiple pages.  otherwise the controls don't update with data from service
+  beers: Drink[] = [new Drink('', '', '', '', '', 0), new Drink('', '', '', '', '', 0)];
+  booze: Drink[] = [new Drink('', '', '', '', '', 0),
+  new Drink('', '', '', '', '', 0),
+  new Drink('', '', '', '', '', 0),
+  new Drink('', '', '', '', '', 0),
+  new Drink('', '', '', '', '', 0),
+  new Drink('', '', '', '', '', 0)
+  ];
 
-  constructor(private drinkService:DrinkService) { }
+  constructor(private drinkService: DrinkService) { }
 
   ngOnInit() {
-      //this.drinks = this.drinkService.getDrinks();
-      this.drinkService.getDrinks(true).then(drinks => this.beers = drinks);
-      this.drinkService.getDrinks(false).then(drinks => this.booze = drinks);
+    //this.drinks = this.drinkService.getDrinks();
+    this.drinkService.getDrinks(true).then(drinks => this.beers = drinks);
+    this.drinkService.getDrinks(false).then(drinks => this.booze = drinks);
   }
 
 

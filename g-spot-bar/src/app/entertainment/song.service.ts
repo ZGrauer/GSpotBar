@@ -21,6 +21,6 @@ export class SongService {
     return this.http.get(jsonPath)
       .toPromise()
       .then(res => <Song[]>res.json().songs)
-      .then(data => { console.log(data); return data; });
+      .then(data => { return data; });
   }
 }
