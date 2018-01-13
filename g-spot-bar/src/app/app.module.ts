@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { DrinkListComponent } from './drinks/drink-list/drink-list.component';
-import { DrinkItemComponent } from './drinks/drink-item/drink-item.component';
-import { DrinkDetailComponent } from './drinks/drink-detail/drink-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import { EntertainmentComponent } from './entertainment/entertainment.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,8 +21,6 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     DrinksComponent,
     DrinkListComponent,
-    DrinkItemComponent,
-    DrinkDetailComponent,
     ContactComponent,
     EntertainmentComponent,
     HomeComponent
