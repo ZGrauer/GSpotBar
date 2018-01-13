@@ -6,7 +6,8 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title = 'The G Spot Bar';
+  title:string = 'The G Spot Bar';
+  logoPath: string = './assets/Logomakr_2oVFzE.png';
   activePage: string;
 
   constructor() { }
