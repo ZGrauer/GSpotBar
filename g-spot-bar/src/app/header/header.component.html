@@ -14,13 +14,25 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li class="pull-left"><a href="#"></a></li> <!-- Dashboard -->
-        <li class="active"><a routerLink=""><i class="fa fa-home"></i> Home</a></li>
-        <li><a routerLink="/drinks"><i class="fa fa-beer"></i> Drinks</a></li>
-        <li><a routerLink="/entertainment"><i class="fa fa-music"></i> Entertainment</a></li>
-        <li><a routerLink="/contact"><i class="fa fa-phone"></i> Contact</a></li>
-        <li class="social pull-right"><a href="#"></a></li> <!-- Social Links -->
+        <li class="pull-left"><a></a></li>
+        <!-- Dashboard -->
+        <li ng-class="{active : activePage === 'home'}">
+          <a routerLink="" (click)="onSelect('home')"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li ng-class="{active : activePage === 'drinks'}">
+          <a routerLink="/drinks" (click)="onSelect('drinks')"><i class="fa fa-beer"></i> Drinks</a>
+        </li>
+        <li ng-class="{active : activePage === 'entertainment'}">
+          <a routerLink="/entertainment" (click)="onSelect('entertainment')"><i class="fa fa-music"></i> Entertainment</a>
+        </li>
+        <li ng-class="{active : activePage === 'contact'}">
+          <a routerLink="/contact" (click)="onSelect('contact')"><i class="fa fa-phone"></i> Contact</a>
+        </li>
+        <li class="social pull-right"><a></a></li>
+        <!-- Social Links -->
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
 </nav>

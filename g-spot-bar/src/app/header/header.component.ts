@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +7,15 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   title = 'The G Spot Bar';
-  @Output() sectionSelected = new EventEmitter<string>();
+  activePage: string;
 
   constructor() { }
 
   ngOnInit() {
+      this.activePage='home';
   }
 
-  onSelect(section: string) {
-      this.sectionSelected.emit(section);
+  onSelect(page: string) {
+    this.activePage = page;
   }
 }
