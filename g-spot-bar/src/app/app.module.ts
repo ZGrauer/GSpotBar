@@ -14,6 +14,7 @@ import { EntertainmentComponent } from './entertainment/entertainment.component'
 import { AppRoutingModule } from './app-routing.module';
 
 import {CarouselModule, DataTableModule, SharedModule} from 'primeng/primeng';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {CarouselModule, DataTableModule, SharedModule} from 'primeng/primeng';
     DrinkItemComponent,
     DrinkDetailComponent,
     ContactComponent,
-    EntertainmentComponent
+    EntertainmentComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
