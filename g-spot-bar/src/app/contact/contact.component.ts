@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit {
   sendEmail(message: IMessage) {
     this.emailService.sendEmail(message).subscribe(res => {
       console.log('ContactComponent Success', res);
+      this.msgs.push({severity:'success', summary:'Succees', detail: 'Email Sent'});
     }, error => {
       console.log('ContactComponent Error', error);
     })

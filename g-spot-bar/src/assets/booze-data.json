@@ -8,6 +8,78 @@
         "abv": 50.5
     },
     {
+        "name":"Pendergasts Royal Gold Bourbon",
+        "brewery": "Tom's Town",
+        "type": "Bourbon",
+        "description":"With aromas of caramelized sugar, pleasant oak, and stone fruits, this bourbon offers a rich warmth that’s perfect for treating special guests. To achieve a smooth and well-balanced flavor, we finished this batch of Pendergast’s Royal Gold in hand-selected 14-year-old port casks. Raise a toast to the latest release in our line of curated whiskeys: Pendergast's Royal Gold - Cask Finished.",
+        "imagePath": "http://www.toms-town.com/sites/default/files/field_product_image/try%20this%20royal%20gold.jpg",
+        "abv": 45
+    },
+    {
+        "name":"The Glenlivet XXV",
+        "brewery": "The Glenlivet",
+        "type": "Scotch",
+        "description":"Creating this exceptional whisky requires craftsmanship and mastery of centuries’ old traditions. The finest raw ingredients, mastery of the art of distilling the purest of spirits and then the selection of only the finest oak casks, each over 25 years of age and chosen at the peak of maturation. The casks are married together in batches and then finished in sherry casks for final flourish of spice, depth and complexity.",
+        "imagePath": "https://img.thewhiskyexchange.com/900/glvob.25yo.jpg",
+        "abv": 43
+    },
+    {
+        "name":"Canadian Mist",
+        "brewery": "Canadian Mist",
+        "type": "Whisky",
+        "description":"Canadian Mist is a true blended whisky. It’s the world’s first whisky that uses fresh water from Georgian Bay, one of North America’s freshest water sources. Made at Canada’s oldest continuously owned and operated distillery in Collingwood, Ontario, Canadian Mist is aged in the finest white oak barrels, and charred to exact specifications to impart its smooth vanilla flavor.",
+        "imagePath": "http://www.canadianmist.com/wp-content/uploads/logo-cm-large.png",
+        "abv": 40
+    },
+    {
+        "name":"Hacienda Vieja Reposado",
+        "brewery": "Hacienda Vieja",
+        "type": "Tequila",
+        "description":"Hacienda Vieja Reposado has a sweet buttery cinnamon bun aroma, with a medium body that contains delicate brown spices, caramel, and pastry flavors.",
+        "imagePath": "http://cdnbevmo.nrostores.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/0/80430.jpg",
+        "abv": 40
+    },
+    {
+        "name":"Corralejo Reposado Tequila",
+        "brewery": "Corralejo",
+        "type": "Tequila",
+        "description":"FOUR STARS HIGHLY RECOMMENDED SPIRIT JOURNAL. Pale straw color with delicate fragrances of pine needle and green olive. These lead to more aromas of peppercorn, brine, and honey with a soft finish.",
+        "imagePath": "http://cdnbevmo.nrostores.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/6/56127.jpg",
+        "abv": 40
+    },
+    {
+        "name":"Hot Damn 100 Proof",
+        "brewery": "Dekuyper",
+        "type": "Schanpps",
+        "description":"Hot Cinnamon Schnapps Liqueur starts any night off with a bang.",
+        "imagePath": "http://www.totalwine.com/media/sys_master/twmmedia/h6d/hf4/10777623560222.png",
+        "abv": 50
+    },
+    {
+        "name":"Pachtree",
+        "brewery": "Dekuyper",
+        "type": "Schanpps",
+        "description":"A classic. This liqueur is bursting with the taste of tree-ripe peaches and makes a mean cocktail.",
+        "imagePath": "http://www.dekuyperusa.com/content/images/flavors/peachtree-schnapps-liqueur.png",
+        "abv": 30
+    },
+    {
+        "name":"Triple Sec",
+        "brewery": "Dekuyper",
+        "type": "Schanpps",
+        "description":"This orange-flavored liqueur is the essential ingredient in almost any margarita",
+        "imagePath": "http://www.dekuyperusa.com/content/images/flavors/triple-sec.png",
+        "abv": 24
+    },
+    {
+        "name":"Amametto",
+        "brewery": "Dekuyper",
+        "type": "Schanpps",
+        "description":"A smooth, rich liqueur made with almonds, vanilla and citrus distillate.",
+        "imagePath": "http://www.dekuyperusa.com/content/images/flavors/amaretto-liqueur.png",
+        "abv": 20
+    },
+    {
         "name":"Firecracker",
         "brewery": "Doc Collier",
         "type": "Moonshine",
@@ -30,6 +102,22 @@
         "description":"We are done messing around, it’s time to raise the proof.  At 128 proof, it’s clear, clean and exactly what moonshine should be. Purity and perfection are the name of the game when it comes to Ole Smoky® Blue Flame Moonshine. Evidence of our high quality, high proof moonshine is all in the color of the flame – if it burns blue, it’s true.",
         "imagePath": "https://s3.amazonaws.com/s3.olesmokymoonshine.com/cache/245x507-ADAPTIVE-100/2015/11/OSM_blue_flame5.png",
         "abv": 64
+    },
+    {
+        "name":"Harley-Davidson Road House Customs",
+        "brewery": "Ole Smokey",
+        "type": "Moonshine",
+        "description":"Nothing goes better with hard-riding, road-loving Harley-Davidson riders than our Road House Customs™ Moonshine. This special hard smoked blend of whiskey is bold and smooth and a perfect start to the revelry after long rides. Its 103 proof is a nod of respect to the Harley-Davidson twin-cam 103™ engine. Ride often. Ride free.",
+        "imagePath": "https://s3.amazonaws.com/s3.olesmokymoonshine.com/cache/245x507-ADAPTIVE-100/2017/10/OSM_HD_charred.png",
+        "abv": 51.5
+    },
+    {
+        "name":"Moonshine Peaches",
+        "brewery": "Ole Smokey",
+        "type": "Moonshine",
+        "description":"One of summer’s finest gifts is the luscious, juicy peach. And the only way to improve on nature’s perfection is to soak a bunch of them in Ole Smoky’s® White Lightin’ Moonshine. Dip in and grab one of those succulent, moonshine-infused peaches and experience a sweet little slice of heaven.  After they’re gone, it leaves just enough moonshine to make a summer sangria that pairs perfectly with sunshine.",
+        "imagePath": "https://s3.amazonaws.com/s3.olesmokymoonshine.com/cache/245x507-ADAPTIVE-100/2015/11/OSM_peaches12.png",
+        "abv": 50
     }
 ]
 }

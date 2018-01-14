@@ -11,3 +11,11 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.dl-horizontal dt {
+  width: 120px;
+}
+
+.dl-horizontal dd {
+  margin-left: 135px;
+}
