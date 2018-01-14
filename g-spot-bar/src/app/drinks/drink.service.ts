@@ -21,12 +21,12 @@ export class DrinkService {
     //return this.drinks.slice();   // Uses locally defined, hardcoded data
 
     // Get drink data from JSON file on server in assets folder
-    var jsonPath: string = './assets/beer-data.json';
+    var jsonPath: string = './assets/json/beer-data.json';
 
     if (getBeer) {
-        jsonPath = './assets/beer-data.json';
+        jsonPath = './assets/json/beer-data.json';
     } else {
-        jsonPath = './assets/booze-data.json';
+        jsonPath = './assets/json/booze-data.json';
     }
 
     return this.http.get(jsonPath)

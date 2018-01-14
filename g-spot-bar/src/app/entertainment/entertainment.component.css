@@ -2,3 +2,11 @@
   padding: 20px 25px 20px 25px;
   line-height: 1.6em;
 }
+
+img {
+  margin: 0 auto;
+}
+
+p {
+  margin-top: 25px
+}

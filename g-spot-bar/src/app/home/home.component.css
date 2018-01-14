@@ -6,3 +6,11 @@
   padding: 20px 25px 20px 25px;
   line-height: 1.6em;
 }
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 73px;
+}

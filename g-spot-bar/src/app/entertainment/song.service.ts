@@ -16,7 +16,7 @@ export class SongService {
     //return this.songs.slice();   // Uses locally defined, hardcoded data
 
     // Get songs data from JSON file on server in assets folder
-    var jsonPath: string = './assets/song-data.json';
+    var jsonPath: string = './assets/json/song-data.json';
 
     return this.http.get(jsonPath)
       .toPromise()
