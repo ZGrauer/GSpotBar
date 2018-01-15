@@ -11,7 +11,7 @@ import { EmailService, IMessage } from './email.service';
 export class ContactComponent implements OnInit {
   message: IMessage = {};
   msgs: any[] = [];
-  buttonEnabled:boolean = true;
+  buttonDisabled:boolean = true;
 
   constructor(private emailService: EmailService) { }
 
@@ -22,7 +22,8 @@ export class ContactComponent implements OnInit {
   sendEmail(message: IMessage) {
     this.emailService.sendEmail(message).subscribe(res => {
       console.log('ContactComponent Success', res);
-      this.msgs.push({severity:'success', summary:'Succees', detail: 'Email Sent'});
+      this.msgs.push({severity:'success', summary:'Succees', detail: 'Email Sent'});    // Have growl message show to user.
+      this.message = {};    // Reset form fields to blank
     }, error => {
       console.log('ContactComponent Error', error);
     })
@@ -32,7 +33,7 @@ export class ContactComponent implements OnInit {
     //call to a backend to verify against recaptcha with private key
     console.log(response);
     this.msgs = [];
-    this.msgs.push({severity:'info', summary:'Succees', detail: 'User Responded'});
-    this.buttonEnabled = false;
+    this.msgs.push({severity:'info', summary:'Succees', detail: 'User Responded'}); // Respond to use with growl mesg
+    this.buttonDisabled = false;
   }
 }
