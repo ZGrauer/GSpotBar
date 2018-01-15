@@ -35,8 +35,8 @@
   <div class="ui-g-12 ui-lg-8 ui-lg-offset-2">
     <h3>Karaoke Song List</h3>
     <p-dataTable [value]="songs" [lazy]="true" [rows]="30" [paginator]="true" [rowsPerPageOptions]="[20,30,40,50]" [resizableColumns]="true" [totalRecords]="totalRecords" (onLazyLoad)="loadSongsLazy($event)">
-      <p-column field="artist" header="Artist" [style]="{'width':'40%'}"></p-column>
-      <p-column field="title" header="Title" [style]="{'width':'45%'}"></p-column>
+      <p-column field="artist" header="Artist" [style]="{'width':'35%'}"></p-column>
+      <p-column field="title" header="Title" [style]="{'width':'50%'}"></p-column>
       <p-column field="track" header="Track #" [style]="{'width':'15%'}"></p-column>
     </p-dataTable>
   </div>
