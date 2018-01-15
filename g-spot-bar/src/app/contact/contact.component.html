@@ -2,26 +2,40 @@
   <h1><i class="fa fa-envelope"></i> Contact</h1>
 </div>
 <div class="ui-g-12 ui-lg-6 ui-lg-offset-2">
-    <p>
-        Have questions not answered on this site?  Need an outlet to complain about flirty bar staff? Use this form to send us your questions and feedback.
-    </p>
-  <form  (submit)="sendEmail(message)">
+  <p>
+    Have questions not answered on this site? Need an outlet to complain about flirty bar staff? Use this form to send us your questions and feedback.
+  </p>
+
+  <form [formGroup]="emailForm" (ngSubmit)="sendEmail()">
     <span class="ui-float-label">
 
-      <input type="text" pInputText  id="name" name="name" [(ngModel)]="message.name">
+      <input type="text" pInputText  id="name" name="name" formControlName="name">
       <label for="name">Your Name</label>
-
+      <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!emailForm.controls['name'].valid&&emailForm.controls['name'].dirty">
+          <i class="fa fa-close"></i>
+          Name is required
+      </div>
     </span>
     <span class="ui-float-label">
-
-      <input type="text" pInputText  id="email" name="email" [(ngModel)]="message.email">
+      <input type="email" pInputText  id="email" name="email" formControlName="email">
        <label for="email">Your Email</label>
+       <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!emailForm.controls['email'].valid&&emailForm.controls['email'].dirty&&emailForm.controls['email'].errors['email']">
+           <i class="fa fa-close"></i>
+           Email is required
+       </div>
+
     </span>
+
+
     <span class="ui-float-label">
-      <textarea id="message" name="message" [rows]="6" [cols]="70" pInputTextarea autoResize="autoResize" [(ngModel)]="message.message"  pInputText></textarea>
-      <label for="message">Message</label>
-  </span>
-    <button pButton type="button" label="Send Email" icon="fa-envelope" (click)="sendEmail(message)" [disabled]="buttonEnabled" ></button>
+              <textarea id="message" name="message" [rows]="6" [cols]="70" formControlName="message" pInputTextarea autoResize="autoResize" pInputText></textarea>
+              <label for="message">Message</label>
+              <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!emailForm.controls['message'].valid&&emailForm.controls['message'].dirty">
+                  <i class="fa fa-close"></i>
+                  Message is required
+              </div>
+          </span>
+    <button pButton type="button" label="Send Email" icon="fa-envelope" (click)="sendEmail(message)" [disabled]="buttonDisabled||emailForm.status!='VALID'"></button>
     <p-captcha siteKey="6LdjnEAUAAAAADdvKH71P4RxKSXk5bGo5-Npvr4O" (onResponse)="showResponse($event)"></p-captcha>
   </form>
   <p-growl [(value)]="msgs"></p-growl>

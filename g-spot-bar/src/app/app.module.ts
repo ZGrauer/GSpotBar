@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -10,6 +10,7 @@ import { DrinkListComponent } from './drinks/drink-list/drink-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { EntertainmentComponent } from './entertainment/entertainment.component';
 import { AppRoutingModule } from './app-routing.module';
+
 
 import {
   CarouselModule,
@@ -36,6 +37,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
     CarouselModule,
