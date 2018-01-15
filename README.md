@@ -36,7 +36,7 @@ The G Spot is the name of my home bar, which was completed in 2017. It got it's 
         `git clone https://github.com/ZGrauer/GSpotBar.git`
 
 4. Install all dependencies by entering `npm install` from a terminal within the cloned folder.
-5. Go to [Goole reCAPTCHA/](https://www.google.com/recaptcha) and setup your domain for `reCAPTCHA V2`.  Record the site key and secret key. 
+5. Go to [Google reCAPTCHA/](https://www.google.com/recaptcha) and setup your domain for `reCAPTCHA V2`.  Record the site key and secret key. 
 6. Go to your project file `/src/app/contact/contact.component.html`, and update the `siteKey` value within the `<p-captcha>` tag on line 39.
 7. Go to your project file `/src/app/contact/email.service.ts`, and update the `private emailUrl` value on line 17 with your personal email.  This is where the contact form will go to.
 8. Edit Angular files as needed within the `./src/app/` folder.  Use the [Angular CLI](https://cli.angular.io/) to add components.
