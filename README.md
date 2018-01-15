@@ -33,7 +33,7 @@ The G Spot is the name of my home bar, which was completed in 2017. It got it's 
 2. Download and install [GitHub Desktop](https://help.github.com/articles/set-up-git/) using these [instructions](https://help.github.com/articles/set-up-git/)
 3. Clone this repository using the [instructions from GitHub](https://help.github.com/articles/cloning-a-repository/)
     * Ensure you use command:
-        `git clone https://github.com/ZGrauer/-----.git`
+        `git clone https://github.com/ZGrauer/GSpotBar.git`
 
 4. Install all dependencies by entering `npm install` from a terminal within the cloned folder.
 5. Go to [Goole reCAPTCHA/](https://www.google.com/recaptcha) and setup your domain for `reCAPTCHA V2`.  Record the site key and secret key. 
@@ -100,7 +100,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Contribute
 
-Feel free to dive in! [Open an issue](https://github.com/ZGrauer/----/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/ZGrauer/GSpotBar/issues/new) or submit PRs.
 
 Customer Tracker follows the [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) Code of Conduct.
 
