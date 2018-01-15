@@ -93,6 +93,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     $ ng help
 ```
 
+### <a name="todo">TODO
+- [] Swap formspree to local PHP path in email service. Spin up server and test.
+
+
 
 ## <a name="maintainers"></a>Maintainers
 
