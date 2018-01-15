@@ -35,7 +35,7 @@
                   Message is required
               </div>
           </span>
-    <button pButton type="button" label="Send Email" icon="fa-envelope" (click)="sendEmail(message)" [disabled]="buttonDisabled||emailForm.status!='VALID'"></button>
+    <button pButton type="button" label="Send Email" icon="fa-envelope" (click)="sendEmail()" [disabled]="buttonDisabled||emailForm.status!='VALID'"></button>
     <p-captcha siteKey="6LdjnEAUAAAAADdvKH71P4RxKSXk5bGo5-Npvr4O" (onResponse)="showResponse($event)"></p-captcha>
   </form>
   <p-growl [(value)]="msgs"></p-growl>

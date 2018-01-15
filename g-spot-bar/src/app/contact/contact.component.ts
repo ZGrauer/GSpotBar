@@ -50,6 +50,4 @@ export class ContactComponent implements OnInit {
     this.msgs.push({ severity: 'info', summary: 'Succees', detail: 'User Responded' }); // Respond to use with growl mesg
     this.buttonDisabled = false;
   }
-
-  get diagnostic() { return JSON.stringify(this.emailForm.value); }
 }
