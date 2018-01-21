@@ -48,6 +48,14 @@
         "abv": 40
     },
     {
+        "name":"Long Island Iced Tea",
+        "brewery": "Barton",
+        "type": "Cocktail",
+        "description":"Barton Long Island Iced Tea is a delicious pre-mixed cocktail that takes all the work out of making your favorite cocktail. Just add cola and sweet and sour mix for a convenient, consistent cocktail every time. This mix contains tequila, gin, rum, vodka and triple sec.",
+        "imagePath": "https://s3imgcdn.binnys.com/images/spiritslabels/110706L.jpg",
+        "abv": 37.5
+    },
+    {
         "name":"Hot Damn 100 Proof",
         "brewery": "Dekuyper",
         "type": "Schanpps",
@@ -56,7 +64,7 @@
         "abv": 50
     },
     {
-        "name":"Pachtree",
+        "name":"Peachtree",
         "brewery": "Dekuyper",
         "type": "Schanpps",
         "description":"A classic. This liqueur is bursting with the taste of tree-ripe peaches and makes a mean cocktail.",
