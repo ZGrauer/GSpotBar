@@ -24,6 +24,11 @@
   font-size: .3em;
 }
 
+#CAH {
+  height: 40px;
+  width: auto;
+}
+
 img {
   margin: 0 auto;
 }
