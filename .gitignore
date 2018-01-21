@@ -29,6 +29,7 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+captcha info.txt
 /typings
 
 # e2e
