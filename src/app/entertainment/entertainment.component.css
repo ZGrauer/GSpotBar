@@ -3,6 +3,27 @@
   line-height: 1.6em;
 }
 
+#ping-ball {
+  color: #ffa500;
+}
+
+.fa-stack {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+#ball-blk {
+  font-size: 1.25em;
+}
+
+#ball-wht {
+  font-size: .5em;
+}
+
+#ball-text {
+  font-size: .3em;
+}
+
 img {
   margin: 0 auto;
 }
