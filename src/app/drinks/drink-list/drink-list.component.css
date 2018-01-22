@@ -19,3 +19,8 @@
 .dl-horizontal dd {
   margin-left: 135px;
 }
+
+.title-icon {
+  height: 2.5em;
+  width: auto;
+}

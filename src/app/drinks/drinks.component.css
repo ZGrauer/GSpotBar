@@ -2,3 +2,8 @@
   max-height: 350px;
   margin: 0 auto;
 }
+
+.title-icon {
+  height: 2em;
+  width: auto;
+}

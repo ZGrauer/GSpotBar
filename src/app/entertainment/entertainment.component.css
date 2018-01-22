@@ -36,3 +36,9 @@ img {
 p {
   margin-top: 25px
 }
+
+.title-icon {
+  height: 2em;
+  width: auto;
+  margin-bottom: -20px;
+}
