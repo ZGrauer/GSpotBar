@@ -44,6 +44,7 @@
 }
 
 .title-icon {
-  height: 2em;
+  height: 2.5em;
   width: auto;
+  margin-bottom: -0.25em;
 }
