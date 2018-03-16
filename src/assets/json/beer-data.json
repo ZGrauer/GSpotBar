@@ -1,19 +1,19 @@
 {"drinks": [
     {
-        "name":"Nutcracker Ale",
-        "brewery": "Boulivard",
-        "type": "Winter Ale",
-        "description":"Nutcracker Ale is Boulevard’s holiday gift for real beer lovers. This hearty, warming brew is a classic winter ale, deep amber in color, with hints of molasses balanced by the spiciness of Chinook hops.",
-        "imagePath": "https://www.boulevard.com/wp-content/uploads/2010/07/Nutcracker-Diamond-Badge.png",
-        "abv": 7.8
+        "name":"Triple Decocted Doppelbock",
+        "brewery": "KC Bier Co",
+        "type": "Amber Doppelbock Lager",
+        "description":"Doppelbock is a rich and malty, smooth full-bodied amber Doppelbock lage with flavors of caramel, molasses, and toasted bread. Decoction is a way of raising the temperature of the mash through boiling, without adding additional water or applying heat to the mash tun. For this batch of Doppelbock the brewers used under-modified malts, which are better suited for decoction mashing, and require additional brewing time. They used these malts not only to pay tribute to the old-style method of German brewing, but to add a smoother, maltier mouthfeel and depth of flavor.",
+        "imagePath": "http://kcbier.com/wp-content/uploads/Doppelbock-website-crop-350x580.jpg",
+        "abv": 7.0
     },
     {
         "name":"Dunkel",
         "brewery": "KC Bier Co",
-        "type": "Lager - Dunkel Munich",
+        "type": "Munich-Style Brown Lager",
         "description":"Dunkel is a full-bodied, brown, Munich-style lager with low bitterness and rich toasted-bread-crust and caramel malt flavors.",
-        "imagePath": "https://cdn.pitch.com/files/base/scomm/kcp/image/2016/09/960w/KCBC_DUNKEL_12oz_BTL_crop.57ee766653b7b.jpg",
-        "abv": 5
+        "imagePath": "http://kcbier.com/wp-content/uploads/dunkel_glass-350x580.png",
+        "abv": 5.1
     }
 ]
 }
