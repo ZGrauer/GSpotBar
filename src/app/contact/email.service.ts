@@ -14,7 +14,7 @@ export interface IMessage {
 @Injectable()
 export class EmailService {
   //private emailUrl = './assets/email.php';
-  private emailUrl = 'https://formspree.io/zachary.grauerholz@gmail.com';
+  private emailUrl = 'https://formspree.io/mrgyrazg';
 
   constructor(private http: Http) {
 
